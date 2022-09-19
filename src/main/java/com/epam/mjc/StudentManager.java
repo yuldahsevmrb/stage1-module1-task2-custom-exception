@@ -22,7 +22,7 @@ public class StudentManager {
         Student student = manager.find(IDs[i]);
         System.out.println("Student name " + student.getName());
       }catch (StudentNotFound e){
-        System.out.print(e.getMessage());
+        System.err.print(e.getMessage());
       }
     }
   }
